@@ -1,13 +1,10 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libdisk.hpp
-///  Defines the runtime interface to the system file I/O library; on Windows
-///  CreateFile/ReadFile/WriteFile, etc. are used while on POSIX systems the
-///  standard open, read, write, etc. are used. All file I/O is performed in
-///  binary mode, and no translation is performed.
-///
+/// @summary Defines the runtime interface to the system file I/O library; on
+/// Windows CreateFile/ReadFile/WriteFile, etc. are used while on POSIX systems
+/// the standard open, read, write, etc. are used. All file I/O is performed in
+/// binary mode, and no translation is performed.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef LIBDISK_HPP_INCLUDED
 #define LIBDISK_HPP_INCLUDED
 

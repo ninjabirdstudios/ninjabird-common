@@ -1,11 +1,9 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libprocessor.cpp
-///  Implements an abstraction on top of the processor management functionality
-///  provided by the operating system, relying on either pthreads or the
-///  equivalent Win32 APIs to create and manage threads, thread local storage
-///  and synchronization primitives.
-///
+/// @summary Implements an abstraction on top of the processor management
+/// functionality provided by the operating system, relying on either pthreads
+/// or the equivalent Win32 APIs to create and manage threads, thread-local
+/// storage and synchronization primitives.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
 
 /*////////////////

@@ -1,10 +1,8 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libhash.cpp
-///  Implements a default set of hashing and CRC calculation functions with
-///  various performance characteristics. All functions operate on memory
-///  buffers.
-///
+/// @summary Implements a default set of hashing and CRC calculation functions
+/// with various performance characteristics. All functions operate on raw
+/// memory buffers.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
 
 /*////////////////

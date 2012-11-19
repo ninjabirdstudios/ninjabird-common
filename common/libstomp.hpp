@@ -1,12 +1,9 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libstomp.hpp
-///  Defines the interface to a parser and formatter for STOMP protocol 1.0
-///  and 1.1 frames. The STOMP protocol is typically used to communicate with
-///  a message-oriented-middleware.
-///
+/// @summary Defines an interface to a parser and formatter for STOMP
+/// protocol 1.0 and 1.1 frames. The STOMP protocol is typically used to
+/// communicate with a message-oriented middleware such as Apache Apollo.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef LIBSTOMP_HPP_INCLUDED
 #define LIBSTOMP_HPP_INCLUDED
 

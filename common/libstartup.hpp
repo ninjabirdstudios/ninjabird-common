@@ -1,11 +1,8 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libstartup.hpp
-///  Defines an interface to perform deterministic system startup and shutdown
-///  for a process.
-///
+/// @summary Defines an interface to perform deterministic system startup
+/// and shutdown for a process.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef LIBSTARTUP_HPP_INCLUDED
 #define LIBSTARTUP_HPP_INCLUDED
 

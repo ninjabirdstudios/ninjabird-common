@@ -1,13 +1,10 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libimage.hpp
-///  Defines the storage structure and routines for manipulating image data in
-///  a generic image container format. This format can store 1D, 2D, 3D and
-///  cubemap images, with or without mipmaps, in either integer or floating-
-///  point formats, and with or without compression.
-///
+/// @summary Defines storage structures and routines for manipulating image
+/// data in a generic image container format. This format can store 1D, 2D, 3D
+/// and cubemap images, with or without mipmaps, in either integer or floating-
+/// point formats, and with or without compression.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef LIBIMAGE_HPP_INCLUDED
 #define LIBIMAGE_HPP_INCLUDED
 

@@ -1,10 +1,8 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libnetwork.cpp
-///  Implements the runtime interface to the system sockets library; on Windows
-///  WinSock2 is used while OS X and Linux the standard BSD-style socket
-///  functionality is used.
-///
+/// @summary Implements the runtime interface to the system sockets library; on
+/// Windows WinSock2 is used while on OS X and Linux the standard BSD-style
+/// socket APIs are used.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
 
 /*////////////////

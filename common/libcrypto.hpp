@@ -1,18 +1,15 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libcrypto.hpp
-///  Implements cryptographic functions including secure key exchange based on
-///  the curve25519 paper (see http://cr.yp.to/ecdh.html) as well as SHA
-///  hashing and AES symmetric encryption. The idea is to use the key exchange
-///  to establish a shared secret, and then use symmetric encryption for secure
-///  communications. The curve25519 implementation was chosen because it is
-///  fast (so you can change secrets frequently) and the implementation is
-///  relatively concise (under 1000 lines of C code.) Cryptographically-secure
-///  random data is obtained by reading from /dev/random or /dev/urandom on
-///  UNIX-like systems, and by using RtlGenRandom on Windows.
-///
+/// @summary Defines cryptographic functions including secure key exchange
+/// based on the curve25519 paper (see http://cr.yp.to/ecdh.html) as well as
+/// SHA hashing and AES symmetric encryption. The idea is to use the key
+/// exchange to establish a shared secret, and then use symmetric encryption
+/// for secure communications. The curve25519 implementation was chosen because
+/// it is fast (so you can change secrets frequently) and the implementation is
+/// relatively concise (under 1000 lines of C code.) Cryptographically-secure
+/// random data is obtained by reading from /dev/random or /dev/urandom on
+/// UNIX-like systems, and by using RtlGenRandom on Windows.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef LIBCRYPTO_HPP_INCLUDED
 #define LIBCRYPTO_HPP_INCLUDED
 

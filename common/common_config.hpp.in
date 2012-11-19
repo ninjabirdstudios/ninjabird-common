@@ -1,11 +1,8 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: common_config.hpp
-///  CMake-configured #defines to configure the build system and check whether
-///  or not specific header files are present.
-///
+/// @summary CMake-configured #defines that configure the build system and
+/// check whether or not specific header files are present.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef CMN_COMMON_CONFIG_HPP_INCLUDED
 #define CMN_COMMON_CONFIG_HPP_INCLUDED
 

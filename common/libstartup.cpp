@@ -1,9 +1,7 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libstartup.cpp
-///  Implements an interface to perform deterministic system startup and
-///  shutdown for a process.
-///
+/// @summary Implements an interface to perform deterministic system startup
+/// and shutdown for a process.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
 
 /*////////////////

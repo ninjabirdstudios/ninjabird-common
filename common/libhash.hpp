@@ -1,12 +1,9 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libhash.hpp
-///  Defines a default set of hashing and CRC calculation functions with
-///  various performance characteristics. All functions operate on memory
-///  buffers.
-///
+/// @summary Defines a default set of hashing ad CRC calculation functions with
+/// various performnce characteristics. All functions operate on raw memory
+/// buffers.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef LIBHASH_HPP_INCLUDED
 #define LIBHASH_HPP_INCLUDED
 

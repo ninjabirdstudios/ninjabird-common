@@ -1,11 +1,9 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libdisk.cpp
-///  Implements the runtime interface to the system file I/O library; on
-///  Windows CreateFile/ReadFile/WriteFile, etc. are used while on POSIX
-///  systems the standard open, read, write, etc. are used. All file I/O is
-///  performed in binary mode, and no translation is performed.
-///
+/// @summary Implements the runtime interface to the system file I/O library;
+/// on Windows CreateFile/ReadFile/WriteFile, etc. are used while on POSIX
+/// systems the standard open, read, write, etc. are used. All file I/O is
+/// performed in binary mode, and no translation is performed.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
 
 /*////////////////
@@ -222,12 +220,12 @@ bool disk::open_direct(char const *path, disk::direct_t *out_file)
     return false;
 #elif CMN_IS_WINDOWS
     disk::direct_t file = CreateFileA(
-        path, 
-        GENERIC_READ, 
-        FILE_SHARE_READ, 
-        NULL, 
-        OPEN_EXISTING, 
-        FILE_FLAG_NO_BUFFERING, 
+        path,
+        GENERIC_READ,
+        FILE_SHARE_READ,
+        NULL,
+        OPEN_EXISTING,
+        FILE_FLAG_NO_BUFFERING,
         NULL);
     if (file != INVALID_HANDLE_VALUE)
     {

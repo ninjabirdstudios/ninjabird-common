@@ -1,15 +1,12 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libmemory.hpp
-///  Defines an interface to the system virtual memory manager, along with a
-///  number of custom memory allocator implementations that can be used for
-///  specific memory allocation patterns. Unlike most core libraries, this
-///  library has a default dependency on libdlmalloc (Doug Lea's memory
-///  allocator implementation, which is used as the default heap implementation
-///  because it is cross-platform and behaves well across platforms.)
-///
+/// @summary Defines an interface to the system virtual memory manager, along
+/// with a number of custom memory allocator implementations that can be used
+/// for specific memory allocation pattersn. Unlike most core libraries, this
+/// library has a default dependency on libdlmalloc (Doug Lea's memory allocator
+/// implementation, which is used as the default heap implementation because it
+/// is cross-platform and behaves consistently and well across platforms.)
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef LIBMEMORY_HPP_INCLUDED
 #define LIBMEMORY_HPP_INCLUDED
 

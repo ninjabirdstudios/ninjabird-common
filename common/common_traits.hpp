@@ -1,13 +1,10 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: common_traits.hpp
-///  Uses template metaprogramming magic to define type traits for the basic
-///  built-in types. This information can be used to determine the alignment
-///  of specific types and to optimize various operations such as moving and
-///  copying data.
-///
+/// @summary Uses template metaprogramming to define type traits for the basic
+/// built-in types. This information can be used to determine the alignment of
+/// specific types and to optimize various operations such as moving and
+/// copying of data.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef CMN_COMMON_TRAITS_HPP_INCLUDED
 #define CMN_COMMON_TRAITS_HPP_INCLUDED
 
@@ -584,8 +581,8 @@ inline void copy(
 /// @param dst The destination array.
 template <typename T>
 inline void copy(
-    T const * CMN_RESTRICT src, 
-    size_t                 count, 
+    T const * CMN_RESTRICT src,
+    size_t                 count,
     T       * CMN_RESTRICT dst)
 {
     copy(src, count, dst, int_to_type<has_trivial_copy<T>::value>());

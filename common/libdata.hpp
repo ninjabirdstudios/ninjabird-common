@@ -1,14 +1,11 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libdata.hpp
-///  Defines basic data structures and algorithms, including doubly-linked
-///  lists for storage, hash-based structures for acceleration, key-value
-///  table manipulation, string data storage and array manipulation. No memory
-///  allocation is performed by this library, so higher-level types must be
-///  constructed on top of these primitives.
-///
+/// @summary Defines basic data structures and algorithms, including doubly-
+/// linked lists for storage, hash-based structures for acceleration, key-value
+/// table manipulation, string data storage and array manipulation. No memory
+/// allocation is performed by this library, so higher-level types must be
+/// constructed on top of these primitives.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef LIBDATA_HPP_INCLUDED
 #define LIBDATA_HPP_INCLUDED
 

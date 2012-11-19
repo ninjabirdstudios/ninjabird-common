@@ -1,12 +1,10 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libdata.cpp
-///  Implements basic data structures and algorithms, including doubly-linked
-///  lists for storage, hash-based structures for acceleration, key-value
-///  table manipulation, string data storage and array manipulation. No memory
-///  allocation is performed by this library, so higher-level types must be
-///  constructed on top of these primitives.
-///
+/// @summary Implements basic data structures and algorithms, including doubly-
+/// linked lists for storage, hash-based structures for acceleration, key-value
+/// table manipulation, string data storage and array manipulation. No memory
+/// allocation is performed by this library, so higher-level types must be
+/// constructed on top of these primitives.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
 
 /*////////////////

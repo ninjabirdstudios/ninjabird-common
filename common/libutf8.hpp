@@ -1,13 +1,10 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libutf8.hpp
-///  Defines a replacement for the standard C string library designed for
-///  working with NULL-terminated UTF-8 encoded strings, along with functions
-///  for converting to and from different string encodings. No memory
-///  management is performed by this module.
-///
+/// @summary Defines a replacement for the standard C string library
+/// designed for working with NULL-terminated UTF-8 encoded strings, along with
+/// functions for converting to and from different string encodings. No memory
+/// management is performed by this module.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef LIBUTF8_HPP_INCLUDED
 #define LIBUTF8_HPP_INCLUDED
 

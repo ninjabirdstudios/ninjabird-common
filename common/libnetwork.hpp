@@ -1,12 +1,9 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libnetwork.hpp
-///  Defines the runtime interface to the system sockets library; on Windows
-///  WinSock2 is used while OS X and Linux the standard BSD-style socket
-///  functionality is used.
-///
+/// @summary Defines the runtime interface to the system sockets library; on
+/// Windows the WinSock2 API is used while OS X and Linux use the standard BSD
+/// sockets API.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef LIBNETWORK_HPP_INCLUDED
 #define LIBNETWORK_HPP_INCLUDED
 

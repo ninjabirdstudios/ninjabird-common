@@ -1,14 +1,11 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libjson.hpp
-///  Defines the interface for parsing JSON documents into a low-cost, easy to
-///  traverse runtime representation. This implementation is based on the
-///  MIT-licensed vjson library (http://code.google.com/p/vjson/) with custom
-///  extensions to allow more flexibility in the JSON document definition and
-///  to provide custom memory management.
-///
+/// @summary Defines the interface for parsing JSON documents into a low-cost,
+/// easy to traverse runtime representation. This implementation is based on
+/// the MIT-licensed vjson library (http://code.google.com/p/vjson/) with
+/// custom extensions to allow more flexibility in the JSON document definition
+/// and to provide custom memory management.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef LIBJSON_HPP_INCLUDED
 #define LIBJSON_HPP_INCLUDED
 

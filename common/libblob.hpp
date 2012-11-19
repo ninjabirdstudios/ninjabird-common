@@ -1,14 +1,12 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libblob.hpp
-///  Defines the interfaces used to read and write blobs, which are used for
-///  storing open-ended data structures, encapsulated as raw blocks of memory.
-///  Blobs can be easily passed around at runtime, serialized to and from disk,
-///  or sent across a network. They are designed for runtime efficiency, not
-///  necessarily space efficiency.
-///
+/// @summary Defines the interfaces used to read and write blobs, which are
+/// used for storing open-ended data structures, encapsulated as raw blocks of
+/// memory. Blobs can be easily passed around at runtime, serialized to and
+/// from disk, or sent across a network. They are designed for runtime
+/// efficiency, not necessarily space efficiency. Additionally, this module
+/// includes routines for working with data stored in raw blocks of memory.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef LIBBLOB_HPP_INCLUDED
 #define LIBBLOB_HPP_INCLUDED
 

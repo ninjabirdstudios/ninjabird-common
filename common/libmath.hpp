@@ -1,11 +1,9 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libmath.hpp
-///  Defines a set of mathematics functions for performing comparisons between
-///  floating point numbers, interpolating scalar quantities, performing 2/3/4
-///  component vector operations, and working with quaternions and 4x4
-///  matrices. The emphasis is on correctness and usability, not performance.
-///
+/// @summary Defines a set of mathematics functions for performing comparisons
+/// between floating-point numbers, interpolating scalar quantities, performing
+/// 2/3/4 component vector operations, and working with quaternions and 4x4
+/// matrices. The emphasis is on correctness and usability, not performance.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
 
 #ifndef LIBMATH_HPP_INCLUDED

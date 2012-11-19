@@ -1,14 +1,11 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libprofile.hpp
-///  Defines an interface to perform interactive, heirarchical profiling of
-///  a program. The profiler is intrusive and requires manual instrumentation.
-///  The implementation is based on a profiler by Sean Barret described in his
-///  column in Game Developer Magazine and available from:
-///  http://silverspaceship.com/src/iprof/
-///
+/// @summary Defines an interface to perform interactive, heirarchical
+/// profiling of a program. The profiler is intrusive and requires manual
+/// instrumentation. The implementation is based on a profile by Sean Barret
+/// described in his column in Game Developer Magazine and available from:
+/// http://silverspaceship.com/src/iprof/
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
-
 #ifndef LIBPROFILE_HPP_INCLUDED
 #define LIBPROFILE_HPP_INCLUDED
 

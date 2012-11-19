@@ -1,11 +1,9 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libimage.cpp
-///  Implements the storage structure and routines for manipulating image data
-///  in the image container format. This format can store 1D, 2D, 3D and
-///  cubemap images, with or without mipmaps, in either integer or
-///  floating-point formats, and with or without compression.
-///
+/// @summary Implements the storage structures and routines for manipulating
+/// image data in a generic image container format. This format can store 1D,
+/// 2D, 3D and cubemap images, with or without mipmaps, in either integer or
+/// floating-point formats, and with or without compression.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
 
 /*////////////////

@@ -1,10 +1,8 @@
 /*/////////////////////////////////////////////////////////////////////////////
-///
-///  @file: libmemory.cpp
-///  Implements the interface to the system virtual memory manager, along with
-///  a number of custom memory allocators that can be used for specific memory
-///  allocation patterns.
-///
+/// @summary Implements the interface to the system virtual memory manager,
+/// along with a number of custom memory allocators that can be used for
+/// specific memory allocation patterns.
+/// @author Russell Klenk (russ@ninjabirdstudios.com)
 ///////////////////////////////////////////////////////////////////////////80*/
 
 /*////////////////
