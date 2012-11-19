@@ -112,7 +112,7 @@ static unsigned int __stdcall thread_startup(void *arg)
 
 /*/////////////////////////////////////////////////////////////////////////80*/
 
-thread_t::thread_t(void)
+processor::thread_t::thread_t(void)
     :
     start_time(0),
     stack_size(processor::thread_t::DEFAULT_STACK_SIZE)
@@ -128,7 +128,7 @@ thread_t::thread_t(void)
 
 /*/////////////////////////////////////////////////////////////////////////80*/
 
-thread_t::~thread_t(void)
+processor::thread_t::~thread_t(void)
 {
 #if   CMN_IS_APPLE || CMN_IS_LINUX
     pthread_attr_destroy(&attributes);
@@ -145,7 +145,7 @@ thread_t::~thread_t(void)
 
 /*/////////////////////////////////////////////////////////////////////////80*/
 
-bool thread_t::start(size_t thread_stack_size)
+bool processor::thread_t::start(size_t thread_stack_size)
 {
 #if   CMN_IS_APPLE || CMN_IS_LINUX
     // explicitly create joinable threads. some platforms may not
@@ -187,7 +187,7 @@ bool thread_t::start(size_t thread_stack_size)
 
 /*/////////////////////////////////////////////////////////////////////////80*/
 
-void thread_t::yield(void)
+void processor::thread_t::yield(void)
 {
 #if   CMN_IS_APPLE
     pthread_yield_np();
@@ -205,7 +205,7 @@ void thread_t::yield(void)
 
 /*/////////////////////////////////////////////////////////////////////////80*/
 
-void thread_t::sleep(uint64_t microseconds)
+void processor::thread_t::sleep(uint64_t microseconds)
 {
 #if   CMN_IS_APPLE || CMN_IS_LINUX
     usleep(microseconds);
@@ -218,7 +218,7 @@ void thread_t::sleep(uint64_t microseconds)
 
 /*/////////////////////////////////////////////////////////////////////////80*/
 
-void* thread_t::join(void)
+void* processor::thread_t::join(void)
 {
 #if   CMN_IS_APPLE || CMN_IS_LINUX
     void  *return_value = NULL;
@@ -236,7 +236,7 @@ void* thread_t::join(void)
 
 /*/////////////////////////////////////////////////////////////////////////80*/
 
-bool thread_t::create_thread_locals(void)
+bool processor::thread_t::create_thread_locals(void)
 {
     // @note: implementation-defined.
     return true;
@@ -244,7 +244,7 @@ bool thread_t::create_thread_locals(void)
 
 /*/////////////////////////////////////////////////////////////////////////80*/
 
-bool thread_t::startup(void)
+bool processor::thread_t::startup(void)
 {
     // @note: implementation-defined.
     return true;
@@ -252,21 +252,21 @@ bool thread_t::startup(void)
 
 /*/////////////////////////////////////////////////////////////////////////80*/
 
-void thread_t::cleanup(void)
+void processor::thread_t::cleanup(void)
 {
     // @note: implementation-defined.
 }
 
 /*/////////////////////////////////////////////////////////////////////////80*/
 
-void thread_t::delete_thread_locals(void)
+void processor::thread_t::delete_thread_locals(void)
 {
     // @note: implementation-defined.
 }
 
 /*/////////////////////////////////////////////////////////////////////////80*/
 
-void* thread_t::run(void)
+void* processor::thread_t::run(void)
 {
     return NULL;
 }

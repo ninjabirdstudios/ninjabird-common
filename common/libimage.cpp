@@ -1368,9 +1368,9 @@ void image::xyz_to_rgb(double x, double y, double z, uint8_t *out_rgb)
     if (v_B > 0.0031308)   v_B = 1.055 * pow(v_B, 1  / 2.4) - 0.055;
     else                   v_B = 12.92 * v_B;
 
-    size_t nr  = (size_t) (v_R * 256.0);
-    size_t ng  = (size_t) (v_G * 256.0);
-    size_t nb  = (size_t) (v_B * 256.0);
+    int64_t nr = (int64_t)(v_R * 256.0);
+    int64_t ng = (int64_t)(v_G * 256.0);
+    int64_t nb = (int64_t)(v_B * 256.0);
     out_rgb[0] = (uint8_t)((nr < 0) ? 0x00 : ((nr > 0xFF) ? 0xFF : nr));
     out_rgb[1] = (uint8_t)((ng < 0) ? 0x00 : ((ng > 0xFF) ? 0xFF : ng));
     out_rgb[2] = (uint8_t)((nb < 0) ? 0x00 : ((nb > 0xFF) ? 0xFF : nb));
@@ -1385,13 +1385,13 @@ void image::cmyk_to_rgb(
     uint8_t  k,
     uint8_t *out_rgb)
 {
-    double C   = (double)   (255 -  c) /  255.0;
-    double M   = (double)   (255 -  m) /  255.0;
-    double Y   = (double)   (255 -  y) /  255.0;
-    double K   = (double)   (255 -  k) /  255.0;
-    size_t nr  = (size_t)  ((1.0 - (C  * (1 - K) + K))  * 255);
-    size_t ng  = (size_t)  ((1.0 - (M  * (1 - K) + K))  * 255);
-    size_t nb  = (size_t)  ((1.0 - (Y  * (1 - K) + K))  * 255);
+    double  C  = (double)   (255 -  c) /  255.0;
+    double  M  = (double)   (255 -  m) /  255.0;
+    double  Y  = (double)   (255 -  y) /  255.0;
+    double  K  = (double)   (255 -  k) /  255.0;
+    int64_t nr = (int64_t) ((1.0 - (C  * (1 - K) + K))  * 255);
+    int64_t ng = (int64_t) ((1.0 - (M  * (1 - K) + K))  * 255);
+    int64_t nb = (int64_t) ((1.0 - (Y  * (1 - K) + K))  * 255);
     out_rgb[0] = (uint8_t) ((nr  <  0) ?  0x00   : ((nr > 0xFF) ? 0xFF : nr));
     out_rgb[1] = (uint8_t) ((ng  <  0) ?  0x00   : ((ng > 0xFF) ? 0xFF : ng));
     out_rgb[2] = (uint8_t) ((nb  <  0) ?  0x00   : ((nb > 0xFF) ? 0xFF : nb));
@@ -1409,9 +1409,9 @@ size_t image::index_wrap(size_t width, size_t height, ptrdiff_t x, ptrdiff_t y)
 /*/////////////////////////////////////////////////////////////////////////80*/
 
 size_t image::index_clamp(
-    size_t    width, 
-    size_t    height, 
-    ptrdiff_t x, 
+    size_t    width,
+    size_t    height,
+    ptrdiff_t x,
     ptrdiff_t y)
 {
     if (x <  0) x = 0;
@@ -1424,9 +1424,9 @@ size_t image::index_clamp(
 /*/////////////////////////////////////////////////////////////////////////80*/
 
 size_t image::index_mirror(
-    size_t    width, 
-    size_t    height, 
-    ptrdiff_t x, 
+    size_t    width,
+    size_t    height,
+    ptrdiff_t x,
     ptrdiff_t y)
 {
     while ((x < 0) || (size_t(x) > (width - 1)))
